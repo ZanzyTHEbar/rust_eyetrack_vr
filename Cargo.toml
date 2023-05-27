@@ -1,0 +1,85 @@
+[package]
+name = "eyetrackvr_rust_bindings"
+version = "0.1.0"
+edition = "2021"
+author = "DaOfficialWizard"
+description = "A Rust library for the EyeTrackVR SDK"
+license = "MIT"
+repository = "https://github.com/ZanzyTHEbar/eyetrackvr-rust-bindings"
+readme = "README.md"
+keywords = [
+    "eyetrackvr",
+    "eyetrack",
+    "vr",
+    "sdk",
+    "bindings",
+    "eye",
+    "track",
+    "head",
+    "headset",
+    "head-mounted",
+    "mounted",
+    "hmd",
+    "head-mounted-display",
+    "display",
+    "headset",
+    "head-mounted",
+    "mounted",
+    "hmd",
+    "head-mounted-display",
+    "vr",
+]
+categories = [
+    "utility",
+    "command-line-utilities",
+    "desktop",
+    "game-development",
+]
+rust-version = "1.69"
+
+[dependencies]
+log = "^0.4.17"
+sysinfo = "0.29.0"
+serde_json = "1.0"
+env_logger = "0.10.0"
+thiserror = "1"
+toml = "0.7.4"
+directories = "5.0.1"
+tracing = "0.1.37"
+indoc = "2"
+dialoguer = "0.10.4"
+clap_complete = "4.2.1"
+ctrlc = "3.3.1"
+walkdir = "2.3.3"
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1"
+features = ["full"]
+
+[dependencies.clap]
+version = "4"
+features = ["derive", "cargo"]
+
+[dev-dependencies]
+anyhow = "1"
+
+[profile]
+[profile.dev]
+debug = 0
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
+
+[package.metadata.deb]
+section = "utility"
+extended-description = """\
+A Rust library for the EyeTrackVR SDK
+"""
