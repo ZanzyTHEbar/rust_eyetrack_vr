@@ -42,7 +42,7 @@ impl Log for Logger {
                     "{} {}",
                     Color::new(
                         f!(
-                            "[Desktop Cleaner - {}]:",
+                            "[EyeTrackVR - {}]:",
                             Color::new(record.level().as_str())
                                 .map_level(record.level())
                                 .bold(),
@@ -62,12 +62,12 @@ impl Log for Logger {
 
 #[macro_export]
 macro_rules! dc_stderr {
-    ($($arg:tt)+) => (eprintln!("{}", f!("{} {}", Color::new("[Desktop Cleaner]:").bold().green(), Color::new($($arg)+).red())));
+    ($($arg:tt)+) => (eprintln!("{}", f!("{} {}", Color::new("[EyeTrackVR]:").bold().green(), Color::new($($arg)+).red())));
 }
 
 #[macro_export]
 macro_rules! dc_stdout {
-    ($($arg:tt)+) => (println!("{}", f!("{} {}", Color::new("[Desktop Cleaner]:").bold().green(), Color::new($($arg)+).green())));
+    ($($arg:tt)+) => (println!("{}", f!("{} {}", Color::new("[EyeTrackVR]:").bold().green(), Color::new($($arg)+).green())));
 }
 
 pub(crate) use dc_stderr;

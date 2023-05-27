@@ -21,6 +21,13 @@ fn main() -> Result<()> {
 
 /// Run the command passed in
 fn run(process: EyeTrackVR) -> Result<()> {
+    dc_stderr!(f!(
+        "{} v{}",
+        Color::new("EyeTrackVR").bold(),
+        Color::new(env!("CARGO_PKG_VERSION")).bold()
+    )
+    .as_str());
+
     process.run()
 }
 
