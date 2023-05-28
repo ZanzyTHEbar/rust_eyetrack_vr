@@ -46,3 +46,5 @@ Generate rlib file:
 ```bash
 rustc --crate-type=lib main.rs --create-name "eye_track_vr" --out-dir ./target/eyetrackvr
 ```
+
+[Blessed Rust](https://blessed.rs)

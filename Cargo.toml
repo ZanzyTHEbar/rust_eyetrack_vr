@@ -51,7 +51,8 @@ dialoguer = "0.10.4"
 clap_complete = "4.2.1"
 ctrlc = "3.3.1"
 walkdir = "2.3.3"
-cargo-watch = "8.4.0"
+rayon = "1.7.0"
+cargo-audit = "0.17.6"
 
 [dependencies.serde]
 version = "1"
@@ -67,6 +68,7 @@ features = ["derive", "cargo"]
 
 [dev-dependencies]
 anyhow = "1"
+cargo-watch = "8.4.0"
 
 [profile]
 [profile.dev]
