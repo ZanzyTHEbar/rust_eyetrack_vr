@@ -11,9 +11,9 @@ build:
 build_test:
 	${CARGO_BIN} build --tests ${CARGO_TARGET_FLAG}
 
-build-docker: build
-# @ prevents to show github token in output
-	@docker build --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} -t dra-ubuntu -f ./devtools/Dockerfile.ubuntu .
+#build-docker: build
+## @ prevents to show github token in output
+#	@docker build --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} -t dra-ubuntu -f ./devtools/Dockerfile.ubuntu .
 
 test:
 # only unit tests
@@ -45,4 +45,4 @@ install-components:
 watch:
 	cargo watch -q -c -w src/ -x 'run -q'
 
-.PHONY: all build build-docker test integration-tests debian-tests release format format-check lint install-components
+.PHONY: all build test integration-tests debian-tests release format format-check lint install-components
