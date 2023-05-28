@@ -2,7 +2,7 @@
 name = "eyetrackvr_rust_bindings"
 version = "0.1.0"
 edition = "2021"
-author = "DaOfficialWizard"
+authors = ["DaOfficialWizard"]
 description = "A Rust library for the EyeTrackVR SDK"
 license = "MIT"
 repository = "https://github.com/ZanzyTHEbar/eyetrackvr-rust-bindings"
