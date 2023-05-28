@@ -13,7 +13,7 @@ Setup Cargo Watch:
 Install it:
 
 ```bash
-cargo add cargo-watch
+cargo install cargo-watch
 ```
 
 Trigger it:
@@ -28,7 +28,7 @@ Add Cargo Edit:
 > `cargo upgrade` to upgrade all dependencies
 
 ```bash
-cargo add cargo-edit
+cargo install cargo-edit
 ```
 
 Generate library documentation:
