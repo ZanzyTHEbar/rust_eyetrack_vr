@@ -1055,13 +1055,11 @@ dependencies = [
  "env_logger",
  "indoc",
  "log",
- "rayon",
  "serde",
  "serde_json",
  "sysinfo",
  "thiserror",
  "tokio",
- "toml 0.7.4",
  "tracing",
  "walkdir",
 ]
