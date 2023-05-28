@@ -1,7 +1,6 @@
 // NOTE: this rule is not supported by rust-analyzer or JetBrains Rust plugin go to definition/refactoring tools so disable it until it's supported properly
 #![allow(clippy::uninlined_format_args)]
 
-#[macro_use]
 extern crate log;
 use crate::prelude::*;
 use eyetrackvr::root_process::EyeTrackVR;
@@ -27,6 +26,8 @@ fn run(process: EyeTrackVR) -> Result<()> {
         Color::new(env!("CARGO_PKG_VERSION")).bold()
     )
     .as_str());
+
+    dc_stdout!(f!("EyetrackVR {}", Color::new("Rust Development").bold()).as_str());
 
     process.run()
 }

@@ -22,6 +22,7 @@ impl EyeTrackVR {
 }
 
 /// below is a test to make sure the EyeTrackVR struct is safe to send across threads
+#[allow(dead_code)]
 fn is_normal<T>()
 where
     T: Sized + Send + Sync + Unpin,

@@ -69,6 +69,7 @@ macro_rules! dc_stderr {
 macro_rules! dc_stdout {
     ($($arg:tt)+) => (println!("{}", f!("{} {}", Color::new("[EyeTrackVR]:").bold().green(), Color::new($($arg)+).green())));
 }
-
+#[allow(unused_imports)]
 pub(crate) use dc_stderr;
+#[allow(unused_imports)]
 pub(crate) use dc_stdout;
