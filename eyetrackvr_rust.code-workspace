@@ -68,10 +68,11 @@
       "opzioni",
       "PDFS",
       "prometheon",
+      "rlib",
+      "rustc",
       "subcmd",
       "thiserror",
-      "uninlined",
-      "rustc"
+      "uninlined"
     ],
     "[python]": {
       "editor.defaultFormatter": "ms-python.black-formatter"
